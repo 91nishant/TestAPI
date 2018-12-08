@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">TestAPI</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="async_task">Async Task</string>
+    <string name="handler">Handler</string>
+    <string name="intent_service">Intent Service</string>
+
+    <string name="thread">Thread</string>
+    <string name="worker_thread">Worker Thread</string>
+    <string name="handler_thread">Handler Thread</string>
+
+    <string name="messenger">Messenger</string>
+    <string name="broadcast_receiver">Broadcast Receiver</string>
+    <string name="result_receiver">Result Receiver</string>
+
+    <string name="finger_print">Finger Print</string>
+    <string name="swipe_gesture">Swipe Gesture</string>
+
+    <string name="started_service">Started Service</string>
+    <string name="bound_service">Bound Service</string>
+    <string name="remote_service">Remote Service</string>
+
+    <string name="activity">Activity</string>
+    <string name="content_provider">Content Provider</string>
+    <string name="intent">Intent</string>
+
+    <string name="view">View</string>
+    <string name="fragment">Fragment</string>
+    <string name="animation">Animation</string>
+
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+    <string name="email">email</string>
+
+    <string name="google_map">Google Map</string>
+    <string name="instant_messenger">Instant Messenger</string>
+    <string name="payment_interface">Payment Interface</string>
+
+    <string name="text_to_speech">Text To Speech</string>
+    <string name="speech_recognition">Speech Recognition</string>
+    <string name="next_set">Next Set</string>
+    <string name="title_activity_example">ActivityExample</string>
+
+    <!--For testing finger_print-->
+    <string name="instructions">Place your fingertip on the Home button to verify your identity</string>
+
+    <!--For testing swipe_gesture-->
+    <string name="title_activity_swipe_gesture_example">SwipeGestureExample</string>
+    <string name="swipe_gesture_check">Swipe Left, Right, Up, Down to test</string>
+
+    <!--For testing started_service-->
+    <string name="first_number">First Number</string>
+    <string name="second_number">Second Number</string>
+    <string name="show_result">Show Result</string>
+    <string name="result">Result</string>
+
+    <!--For testing activity-->
+    <string name="activity_test">Activity Test</string>
+
+
+    <!--For testing bound_service, same resources used as started_service-->
+
+
+</resources>
