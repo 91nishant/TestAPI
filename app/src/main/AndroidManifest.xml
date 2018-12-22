@@ -37,14 +37,15 @@
         <activity
             android:name=".swipegesture.SwipeGestureExample"
             android:label="@string/title_activity_swipe_gesture_example"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activity.ActivityExample"
             android:label="@string/title_activity_example"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".startservice.StartedServiceExample" />
         <activity android:name=".boundservice.BoundServiceExample" />
-
+        <activity android:name=".SecondMainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

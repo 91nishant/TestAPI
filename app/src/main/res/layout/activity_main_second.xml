@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="100"
-    tools:context=".MainActivity">
+    android:weightSum="100">
 
     <LinearLayout
         android:id="@+id/ll1"
@@ -16,28 +13,27 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/async_task"
+            android:id="@+id/button11"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/async_task" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/handler"
+            android:id="@+id/button12"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/handler" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/intent_service"
+            android:id="@+id/button13"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/intent_service" />
+            android:text="@string/button" />
 
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/ll2"
@@ -51,21 +47,21 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/thread" />
+            android:text="@string/button" />
 
         <Button
             android:id="@+id/button22"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/worker_thread" />
+            android:text="@string/button" />
 
         <Button
             android:id="@+id/button23"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/handler_thread" />
+            android:text="@string/button" />
 
     </LinearLayout>
 
@@ -77,25 +73,25 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/messenger"
+            android:id="@+id/button31"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/messenger" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/broadcast_receiver"
+            android:id="@+id/button32"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/broadcast_receiver" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/result_receiver"
+            android:id="@+id/button33"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/result_receiver" />
+            android:text="@string/button" />
 
     </LinearLayout>
 
@@ -107,18 +103,18 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/finger_print"
+            android:id="@+id/button41"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/finger_print" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/swipe_gesture"
+            android:id="@+id/button42"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/swipe_gesture" />
+            android:text="@string/button" />
 
         <Button
             android:id="@+id/button43"
@@ -137,25 +133,25 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/started_service"
+            android:id="@+id/button51"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/started_service" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/bound_service"
+            android:id="@+id/button52"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/bound_service" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/remote_service"
+            android:id="@+id/button53"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/remote_service" />
+            android:text="@string/button" />
 
     </LinearLayout>
 
@@ -167,25 +163,25 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/activity"
+            android:id="@+id/button61"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/activity" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/content_provider"
+            android:id="@+id/button62"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/content_provider" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/intent"
+            android:id="@+id/button63"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/intent" />
+            android:text="@string/button" />
 
     </LinearLayout>
 
@@ -197,25 +193,25 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/view"
+            android:id="@+id/button71"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/view" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/fragment"
+            android:id="@+id/button72"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/fragment" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/animation"
+            android:id="@+id/button73"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/animation" />
+            android:text="@string/button" />
 
     </LinearLayout>
 
@@ -227,25 +223,25 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/download"
+            android:id="@+id/button81"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/download" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/upload"
+            android:id="@+id/button82"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/upload" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/email"
+            android:id="@+id/button83"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/email" />
+            android:text="@string/button" />
 
     </LinearLayout>
 
@@ -257,25 +253,25 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/google_map"
+            android:id="@+id/button91"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/google_map" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/instant_messenger"
+            android:id="@+id/button92"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/instant_messenger" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/payment_interface"
+            android:id="@+id/button93"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/payment_interface" />
+            android:text="@string/button" />
 
     </LinearLayout>
 
@@ -287,28 +283,26 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/text_to_speech"
+            android:id="@+id/button101"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/text_to_speech" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/speech_recognition"
+            android:id="@+id/button102"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/speech_recognition" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/next_set"
+            android:id="@+id/button103"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/next_set" />
+            android:text="@string/button" />
 
     </LinearLayout>
-
-
 
 </LinearLayout>

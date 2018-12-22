@@ -19,7 +19,7 @@ import static com.example.nikumar.testapi.commonutility.CustomLogger.printVerbos
 public class MainActivity extends Activity {
     private static final String TAG = "MainActivity";
     Button mAsyncTask, mHandler, mIntentService, mFingerPrint, mSwipeGesture, mStartedService,
-            mBoundService, mActivity;
+            mBoundService, mActivity, mNextSet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
         mStartedService = findViewById(R.id.started_service);
         mBoundService = findViewById(R.id.bound_service);
         mActivity = findViewById(R.id.activity);
-
+        mNextSet = findViewById(R.id.next_set);
     }
 
     private void registerOnClickListeners() {
@@ -52,6 +52,7 @@ public class MainActivity extends Activity {
         mStartedService.setOnClickListener(mUiListenersImpl);
         mBoundService.setOnClickListener(mUiListenersImpl);
         mActivity.setOnClickListener(mUiListenersImpl);
+        mNextSet.setOnClickListener(mUiListenersImpl);
     }
 
     class UiListenersImpl implements View.OnClickListener {
@@ -90,6 +91,9 @@ public class MainActivity extends Activity {
                     printVerbose(TAG, "Button Clicked :", getResources().getString(R.string.activity));
                     startActivity(new Intent(MainActivity.this, ActivityExample.class));
                     break;
+                case R.id.next_set:
+                    printVerbose(TAG, "Button Clicked : ", getResources().getString(R.string.next_set));
+                    startActivity(new Intent(MainActivity.this, SecondMainActivity.class));
             }
         }
     }
