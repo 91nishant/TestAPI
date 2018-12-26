@@ -257,25 +257,25 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/google_map"
+            android:id="@+id/button91"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/google_map" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/instant_messenger"
+            android:id="@+id/button92"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/instant_messenger" />
+            android:text="@string/button" />
 
         <Button
-            android:id="@+id/payment_interface"
+            android:id="@+id/button93"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/payment_interface" />
+            android:text="@string/button" />
 
     </LinearLayout>
 

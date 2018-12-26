@@ -44,8 +44,18 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".startservice.StartedServiceExample" />
         <activity android:name=".boundservice.BoundServiceExample" />
-        <activity android:name=".SecondMainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SecondMainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".googlemap.GoogleMapExample"
+            android:label="@string/title_activity_google_map_example"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.nikumar.testapi.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

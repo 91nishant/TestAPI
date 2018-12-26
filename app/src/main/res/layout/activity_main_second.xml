@@ -13,25 +13,25 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/google_map"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/button" />
+            android:text="@string/google_map" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/instant_messenger"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/button" />
+            android:text="@string/instant_messenger" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/payment_interface"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/button" />
+            android:text="@string/payment_interface" />
 
     </LinearLayout>
 
