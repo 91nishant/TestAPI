@@ -12,10 +12,11 @@ import static com.example.nikumar.testapi.commonutility.CustomLogger.printVerbos
 
 public class SecondMainActivity extends AppCompatActivity {
     private static final String TAG = "SecondMainActivity";
-    Button mGoogleMap;
+    Button mGoogleMap, mFingerPrint, mSwipeGesture;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        printVerbose(TAG, "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_second);
         init();
@@ -24,11 +25,15 @@ public class SecondMainActivity extends AppCompatActivity {
 
     private void init() {
         mGoogleMap = findViewById(R.id.google_map);
+        mFingerPrint = findViewById(R.id.finger_print);
+        mSwipeGesture = findViewById(R.id.swipe_gesture);
     }
 
     private void registerOnClickListeners() {
         UiListenersImpl mUiListenersImpl = new UiListenersImpl();
         mGoogleMap.setOnClickListener(mUiListenersImpl);
+        mFingerPrint.setOnClickListener(mUiListenersImpl);
+        mSwipeGesture.setOnClickListener(mUiListenersImpl);
     }
 
     class UiListenersImpl implements View.OnClickListener {

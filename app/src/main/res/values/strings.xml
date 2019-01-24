@@ -15,12 +15,13 @@
     <string name="worker_thread">Worker Thread</string>
     <string name="handler_thread">Handler Thread</string>
 
+    <string name="view">View</string>
+    <string name="fragment">Fragment</string>
+    <string name="animation">Animation</string>
+
     <string name="messenger">Messenger</string>
     <string name="broadcast_receiver">Broadcast Receiver</string>
     <string name="result_receiver">Result Receiver</string>
-
-    <string name="finger_print">Finger Print</string>
-    <string name="swipe_gesture">Swipe Gesture</string>
 
     <string name="started_service">Started Service</string>
     <string name="bound_service">Bound Service</string>
@@ -30,18 +31,9 @@
     <string name="content_provider">Content Provider</string>
     <string name="intent">Intent</string>
 
-    <string name="view">View</string>
-    <string name="fragment">Fragment</string>
-    <string name="animation">Animation</string>
-
-    <string name="download">Download</string>
-    <string name="upload">Upload</string>
-    <string name="email">email</string>
-
-
-    <string name="text_to_speech">Text To Speech</string>
-    <string name="speech_recognition">Speech Recognition</string>
     <string name="next_set">Next Set</string>
+
+    <!--Activity resources for activity_main.xml-->
     <string name="title_activity_example">ActivityExample</string>
 
     <!--For testing finger_print-->
@@ -60,16 +52,29 @@
     <!--For testing activity-->
     <string name="activity_test">Activity Test</string>
 
+    <!--For testing bound_service, same resources used for started_service-->
 
-    <!--For testing bound_service, same resources used as started_service-->
 
     <!--String resources used for layout activity_main_second.xml-->
     <string name="google_map">Google Map</string>
     <string name="instant_messenger">Instant Messenger</string>
     <string name="payment_interface">Payment Interface</string>
+
+    <string name="finger_print">Finger Print</string>
+    <string name="swipe_gesture">Swipe Gesture</string>
+
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+    <string name="email">email</string>
+
+    <string name="text_to_speech">Text To Speech</string>
+    <string name="speech_recognition">Speech Recognition</string>
+
+    <!--Activity resources for activity_main_second.xml-->
     <string name="title_activity_google_map_example">GoogleMapExample</string>
 
     <!--For testing google_map-->
     <string name="post_on_map">Post on Map</string>
+
 
 </resources>

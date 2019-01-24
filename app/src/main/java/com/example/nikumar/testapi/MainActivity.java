@@ -18,7 +18,7 @@ import static com.example.nikumar.testapi.commonutility.CustomLogger.printVerbos
 
 public class MainActivity extends Activity {
     private static final String TAG = "MainActivity";
-    Button mAsyncTask, mHandler, mIntentService, mFingerPrint, mSwipeGesture, mStartedService,
+    Button mAsyncTask, mHandler, mIntentService, mStartedService,
             mBoundService, mActivity, mNextSet;
 
     @Override
@@ -34,8 +34,6 @@ public class MainActivity extends Activity {
         mAsyncTask = findViewById(R.id.async_task);
         mHandler = findViewById(R.id.handler);
         mIntentService = findViewById(R.id.intent_service);
-        mFingerPrint = findViewById(R.id.finger_print);
-        mSwipeGesture = findViewById(R.id.swipe_gesture);
         mStartedService = findViewById(R.id.started_service);
         mBoundService = findViewById(R.id.bound_service);
         mActivity = findViewById(R.id.activity);
@@ -47,8 +45,6 @@ public class MainActivity extends Activity {
         mAsyncTask.setOnClickListener(mUiListenersImpl);
         mHandler.setOnClickListener(mUiListenersImpl);
         mIntentService.setOnClickListener(mUiListenersImpl);
-        mFingerPrint.setOnClickListener(mUiListenersImpl);
-        mSwipeGesture.setOnClickListener(mUiListenersImpl);
         mStartedService.setOnClickListener(mUiListenersImpl);
         mBoundService.setOnClickListener(mUiListenersImpl);
         mActivity.setOnClickListener(mUiListenersImpl);
