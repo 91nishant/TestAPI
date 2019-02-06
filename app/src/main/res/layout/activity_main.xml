@@ -197,18 +197,18 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button71"
+            android:id="@+id/crash"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/button" />
+            android:text="@string/crash" />
 
         <Button
-            android:id="@+id/button72"
+            android:id="@+id/anr"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/button" />
+            android:text="@string/anr" />
 
         <Button
             android:id="@+id/button73"

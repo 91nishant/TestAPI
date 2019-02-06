@@ -7,8 +7,10 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.nikumar.testapi.activity.ActivityExample;
+import com.example.nikumar.testapi.anr.AnrExample;
 import com.example.nikumar.testapi.asynctask.AsyncTaskExample;
 import com.example.nikumar.testapi.boundservice.BoundServiceExample;
+import com.example.nikumar.testapi.crash.CrashExample;
 import com.example.nikumar.testapi.fingerprint.FingerPrintExample;
 import com.example.nikumar.testapi.intentservice.IntentServiceExample;
 import com.example.nikumar.testapi.startservice.StartedServiceExample;
@@ -19,7 +21,7 @@ import static com.example.nikumar.testapi.commonutility.CustomLogger.printVerbos
 public class MainActivity extends Activity {
     private static final String TAG = "MainActivity";
     Button mAsyncTask, mHandler, mIntentService, mStartedService,
-            mBoundService, mActivity, mNextSet;
+            mBoundService, mActivity, mCrash, mAnr, mNextSet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,8 @@ public class MainActivity extends Activity {
         mStartedService = findViewById(R.id.started_service);
         mBoundService = findViewById(R.id.bound_service);
         mActivity = findViewById(R.id.activity);
+        mCrash = findViewById(R.id.crash);
+        mAnr = findViewById(R.id.anr);
         mNextSet = findViewById(R.id.next_set);
     }
 
@@ -48,6 +52,8 @@ public class MainActivity extends Activity {
         mStartedService.setOnClickListener(mUiListenersImpl);
         mBoundService.setOnClickListener(mUiListenersImpl);
         mActivity.setOnClickListener(mUiListenersImpl);
+        mCrash.setOnClickListener(mUiListenersImpl);
+        mAnr.setOnClickListener(mUiListenersImpl);
         mNextSet.setOnClickListener(mUiListenersImpl);
     }
 
@@ -86,6 +92,14 @@ public class MainActivity extends Activity {
                 case R.id.activity:
                     printVerbose(TAG, "Button Clicked :", getResources().getString(R.string.activity));
                     startActivity(new Intent(MainActivity.this, ActivityExample.class));
+                    break;
+                case R.id.crash:
+                    printVerbose(TAG, "Button Clicked :", getResources().getString(R.string.crash));
+                    startActivity(new Intent(MainActivity.this, CrashExample.class));
+                    break;
+                case R.id.anr:
+                    printVerbose(TAG, "Button Clicked :", getResources().getString(R.string.anr));
+                    startActivity(new Intent(MainActivity.this, AnrExample.class));
                     break;
                 case R.id.next_set:
                     printVerbose(TAG, "Button Clicked : ", getResources().getString(R.string.next_set));
