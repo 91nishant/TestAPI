@@ -211,11 +211,11 @@
             android:text="@string/anr" />
 
         <Button
-            android:id="@+id/button73"
+            android:id="@+id/storage"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/button" />
+            android:text="@string/storage" />
 
     </LinearLayout>
 

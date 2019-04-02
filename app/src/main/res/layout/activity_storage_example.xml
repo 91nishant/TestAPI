@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/app_private_storage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_private_storage" />
+
+        <TextView
+            android:id="@+id/show_app_private_storage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars = "vertical"
+            android:text="@string/tap_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/internal_sd_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/internal_sd_card" />
+
+        <TextView
+            android:id="@+id/show_internal_sd_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars = "vertical"
+            android:text="@string/tap_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/external_sd_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/external_sd_card" />
+
+        <TextView
+            android:id="@+id/show_external_sd_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars = "vertical"
+            android:text="@string/tap_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="25"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/enter_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_path"/>
+
+        <Button
+            android:id="@+id/resolved_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resolved_path" />
+
+        <TextView
+            android:id="@+id/show_resolved_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars = "vertical"
+            android:text="@string/tap_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

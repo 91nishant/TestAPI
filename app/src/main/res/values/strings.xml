@@ -33,6 +33,7 @@
 
     <string name="crash">Crash</string>
     <string name="anr">ANR</string>
+    <string name="storage">Storage</string>
 
     <string name="next_set">Next Set</string>
 
@@ -63,6 +64,13 @@
     <!--For testing anr-->
     <string name="trigger_anr">Trigger ANR</string>
 
+    <!--For testing storage-->
+    <string name="app_private_storage">App Private Storage</string>
+    <string name="internal_sd_card">Internal SD Card</string>
+    <string name="external_sd_card">External SD Card</string>
+    <string name="tap_button">Tap the button to show</string>
+    <string name="enter_path">Enter Path</string>
+    <string name="resolved_path">Resolved Path</string>
 
     <!--String resources used for layout activity_main_second.xml-->
     <string name="google_map">Google Map</string>
@@ -85,6 +93,5 @@
     <!--For testing google_map-->
     <string name="post_on_map">Post on Map</string>
     <string name="title_activity_crash_example">CrashExample</string>
-
 
 </resources>

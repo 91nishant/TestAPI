@@ -49,6 +49,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".startservice.StartedServiceExample" />
         <activity android:name=".boundservice.BoundServiceExample" />
+        <activity android:name=".storage.StorageExample"/>
         <activity
             android:name=".SecondMainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
