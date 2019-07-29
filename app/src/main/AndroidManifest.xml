@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".anr.AnrExample"></activity>
+        <activity android:name=".activity.NoUiActivity"></activity>
+        <activity android:name=".anr.AnrExample" />
         <activity
             android:name=".crash.CrashExample"
             android:label="@string/title_activity_crash_example"
@@ -49,7 +50,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".startservice.StartedServiceExample" />
         <activity android:name=".boundservice.BoundServiceExample" />
-        <activity android:name=".storage.StorageExample"/>
+        <activity android:name=".storage.StorageExample" />
         <activity
             android:name=".SecondMainActivity"
             android:theme="@style/AppTheme.NoActionBar" />

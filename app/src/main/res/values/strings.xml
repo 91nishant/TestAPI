@@ -55,6 +55,8 @@
 
     <!--For testing activity-->
     <string name="activity_test">Activity Test</string>
+    <string name="activity_no_ui">Activity with no UI</string>
+    <string name="send_msg">Send a Message</string>
 
     <!--For testing bound_service, same resources used for started_service-->
 
