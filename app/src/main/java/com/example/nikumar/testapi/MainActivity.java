@@ -16,13 +16,14 @@ import com.example.nikumar.testapi.intentservice.IntentServiceExample;
 import com.example.nikumar.testapi.startservice.StartedServiceExample;
 import com.example.nikumar.testapi.storage.StorageExample;
 import com.example.nikumar.testapi.swipegesture.SwipeGestureExample;
+import com.example.nikumar.testapi.widgets.WidgetsExample;
 
 import static com.example.nikumar.testapi.commonutility.CustomLogger.printVerbose;
 
 public class MainActivity extends Activity {
     private static final String TAG = "MainActivity";
     Button mAsyncTask, mHandler, mIntentService, mStartedService,
-            mBoundService, mActivity, mCrash, mAnr, mStorage, mNextSet;
+            mBoundService, mActivity, mCrash, mAnr, mStorage, mWidgets, mNextSet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,7 @@ public class MainActivity extends Activity {
         mCrash = findViewById(R.id.crash);
         mAnr = findViewById(R.id.anr);
         mStorage = findViewById(R.id.storage);
+        mWidgets = findViewById(R.id.widgets);
         mNextSet = findViewById(R.id.next_set);
     }
 
@@ -57,6 +59,7 @@ public class MainActivity extends Activity {
         mCrash.setOnClickListener(mUiListenersImpl);
         mAnr.setOnClickListener(mUiListenersImpl);
         mStorage.setOnClickListener(mUiListenersImpl);
+        mWidgets.setOnClickListener(mUiListenersImpl);
         mNextSet.setOnClickListener(mUiListenersImpl);
     }
 
@@ -107,6 +110,10 @@ public class MainActivity extends Activity {
                 case R.id.storage:
                     printVerbose(TAG, "Button Clicked :", getResources().getString(R.string.storage));
                     startActivity(new Intent(MainActivity.this, StorageExample.class));
+                    break;
+                case R.id.widgets:
+                    printVerbose(TAG, "Button Clicked :", getResources().getString(R.string.widgets));
+                    startActivity(new Intent(MainActivity.this, WidgetsExample.class));
                     break;
                 case R.id.next_set:
                     printVerbose(TAG, "Button Clicked : ", getResources().getString(R.string.next_set));

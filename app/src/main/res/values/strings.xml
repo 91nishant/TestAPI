@@ -35,6 +35,8 @@
     <string name="anr">ANR</string>
     <string name="storage">Storage</string>
 
+    <string name="widgets">Widgets</string>
+
     <string name="next_set">Next Set</string>
 
     <!--Activity resources for activity_main.xml-->
@@ -73,6 +75,16 @@
     <string name="tap_button">Tap the button to show</string>
     <string name="enter_path">Enter Path</string>
     <string name="resolved_path">Resolved Path</string>
+
+
+    <!--For testing widgets-->
+    <string name="switch_">Switch</string>
+    <string name="textview">TextView</string>
+    <string name="edittext">EditText</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="radio_button">RadioButton</string>
+    <string name="toggle_button">ToggleButton</string>
+    <string name="image_description">This is a picture of a sunflower</string>
 
     <!--String resources used for layout activity_main_second.xml-->
     <string name="google_map">Google Map</string>

@@ -227,11 +227,11 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button81"
+            android:id="@+id/widgets"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/button" />
+            android:text="@string/widgets" />
 
         <Button
             android:id="@+id/button82"
