@@ -1,28 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activity.ActivityExample"
-    android:background="#000000">
-
+    android:background="#000000"
+    tools:context=".activity.ActivityExample">
 
     <Button
         android:id="@+id/sample_button_for_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activity_test" />
+        android:text="@string/activity_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/activity_no_ui"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/activity_no_ui" />
+        android:text="@string/activity_no_ui"
+        app:layout_constraintStart_toStartOf="@+id/sample_button_for_activity"
+        app:layout_constraintTop_toBottomOf="@+id/sample_button_for_activity" />
 
     <Button
         android:id="@+id/send_msg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/send_msg" />
-</LinearLayout>
+        android:text="@string/send_msg"
+        app:layout_constraintStart_toStartOf="@+id/activity_no_ui"
+        app:layout_constraintTop_toBottomOf="@+id/activity_no_ui" />
+
+    <TextView
+        android:id="@+id/message_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message_bar"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,77 +1,103 @@
 package com.example.nikumar.testapi.activity;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.nikumar.testapi.R;
 import com.example.nikumar.testapi.commonutility.CustomLogger;
 
+import static com.example.nikumar.testapi.commonutility.CustomLogger.printVerbose;
+
 public class ActivityExample extends AppCompatActivity {
     private static final String TAG = "ActivityExample";
+    private static final String MSG_ERR_NO_ACTIVITY = "No activity found to send messages";
+    private static final String MSG_CALLING_NO_UI_ACTIVITY = "Calling activity with no UI";
+    private static final String MSG_CALLING_ACTIVITY_SUCCESSFUL = "Calling activity with no UI successful";
     Button mActivityNoUi, mSendMsg;
+    TextView mMessageBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        CustomLogger.printVerbose(TAG, "onCreate");
+        printVerbose(TAG, "onCreate");
         setContentView(R.layout.activity_example);
         mActivityNoUi = findViewById(R.id.activity_no_ui);
         mSendMsg = findViewById(R.id.send_msg);
+        mMessageBar = findViewById(R.id.message_bar);
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        CustomLogger.printVerbose(TAG, "onStart");
+        printVerbose(TAG, "onStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        CustomLogger.printVerbose(TAG, "onResume");
+        printVerbose(TAG, "onResume");
         mActivityNoUi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                printVerbose(TAG, "mActivityNoUi, onClick method");
                 Intent in = new Intent(ActivityExample.this, NoUiActivity.class);
-                startActivity(in);
+                mMessageBar.setText(MSG_CALLING_NO_UI_ACTIVITY);
+                startActivityForResult(in, 1);
             }
         });
         mSendMsg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                printVerbose(TAG, "mSendMsg, onClick method");
                 Intent smsIntent = new Intent(android.content.Intent.ACTION_VIEW);
+                PackageManager pm = getApplication().getPackageManager();
                 smsIntent.setType("vnd.android-dir/mms-sms");
-                smsIntent.putExtra("address","1542654657");
-                smsIntent.putExtra("sms_body","This is a sample message to send");
-                startActivity(smsIntent);
+                smsIntent.putExtra("address", "1542654657");
+                smsIntent.putExtra("sms_body", "This is a sample message to send");
+                if (null != smsIntent.resolveActivity(pm)) {
+                    startActivity(smsIntent);
+                } else {
+                    mMessageBar.setText(MSG_ERR_NO_ACTIVITY);
+                }
             }
         });
     }
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        printVerbose(TAG, "onActivityResult");
+        if (requestCode == 1) {
+            mMessageBar.setText(MSG_CALLING_ACTIVITY_SUCCESSFUL);
+        }
+    }
+
+    @Override
     protected void onPause() {
         super.onPause();
-        CustomLogger.printVerbose(TAG, "onPause");
+        printVerbose(TAG, "onPause");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        CustomLogger.printVerbose(TAG, "onStop");
+        printVerbose(TAG, "onStop");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        CustomLogger.printVerbose(TAG, "onRestart");
+        printVerbose(TAG, "onRestart");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        CustomLogger.printVerbose(TAG, "onDestroy");
+        printVerbose(TAG, "onDestroy");
     }
 }
