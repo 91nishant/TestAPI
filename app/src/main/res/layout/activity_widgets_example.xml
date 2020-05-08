@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:text="@string/toggle_button" />
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
