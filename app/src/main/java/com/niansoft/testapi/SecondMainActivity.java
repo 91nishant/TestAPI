@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.niansoft.testapi.R;
 import com.niansoft.testapi.googlemap.GoogleMapExample;
 
 import static com.niansoft.utils.CustomLogger.printVerbose;

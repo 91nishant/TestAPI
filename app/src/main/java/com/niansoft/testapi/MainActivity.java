@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.niansoft.testapi.R;
 import com.niansoft.testapi.activity.ActivityExample;
 import com.niansoft.testapi.anr.AnrExample;
 import com.niansoft.testapi.asynctask.AsyncTaskExample;
@@ -17,9 +16,11 @@ import com.niansoft.testapi.intentservice.IntentServiceExample;
 import com.niansoft.testapi.startservice.StartedServiceExample;
 import com.niansoft.testapi.storage.StorageExample;
 import com.niansoft.testapi.swipegesture.SwipeGestureExample;
+import com.niansoft.testapi.utils.Constants;
 import com.niansoft.testapi.widgets.WidgetsExample;
 
 import static com.niansoft.utils.CustomLogger.printVerbose;
+import static com.niansoft.utils.CustomLogger.setAppTag;
 
 public class MainActivity extends Activity {
     private static final String TAG = "MainActivity";
@@ -29,6 +30,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setAppTag(Constants.APP_TAG);
         printVerbose(TAG, "onCreate");
         setContentView(R.layout.activity_main);
         init();

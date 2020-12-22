@@ -6,10 +6,18 @@
     tools:context=".crash.CrashExample">
 
     <Button
-        android:id="@+id/trigger_crash"
+        android:id="@+id/trigger_java_crash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/trigger_crash" />
+        android:text="@string/trigger_java_crash" />
+
+    <Button
+        android:id="@+id/trigger_native_crash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/trigger_java_crash"
+        android:text="@string/trigger_native_crash" />
 
 </RelativeLayout>

@@ -1,6 +1,5 @@
 package com.niansoft.utils;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.util.Log;
@@ -20,7 +19,7 @@ public class CustomLogger {
     private static final boolean WARNING = true;
     private static final boolean ERROR = true;
 
-    private static ArrayList<String> disabledClasses = new ArrayList<String>();
+    private static ArrayList<String> disabledClasses = new ArrayList<>();
 
     /**
      * Method to set the tag for App

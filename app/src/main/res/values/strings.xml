@@ -7,7 +7,10 @@
     <string name="title_notifications">Notifications</string>
     <string name="button">Button</string>
 
+    <!--For testing Async_Task-->
     <string name="async_task">Async Task</string>
+    <string name="trigger_async_task">Trigger Image download</string>
+
     <string name="handler">Handler</string>
     <string name="intent_service">Intent Service</string>
 
@@ -64,7 +67,8 @@
     <!--For testing bound_service, same resources used for started_service-->
 
     <!--For testing crash-->
-    <string name="trigger_crash">Trigger Crash</string>
+    <string name="trigger_java_crash">Trigger Java Crash</string>
+    <string name="trigger_native_crash">Trigger Native Crash</string>
 
     <!--For testing anr-->
     <string name="trigger_anr">Trigger ANR</string>

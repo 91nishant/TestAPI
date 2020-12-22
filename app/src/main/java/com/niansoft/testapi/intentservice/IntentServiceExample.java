@@ -104,7 +104,6 @@ public class IntentServiceExample extends AppCompatActivity implements View.OnCl
         super.onDestroy();
     }
 
-    @SuppressLint("HandlerLeak")
     Handler mHandler = new Handler() {
 
         @Override

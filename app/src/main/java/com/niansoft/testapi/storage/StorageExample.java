@@ -2,7 +2,6 @@ package com.niansoft.testapi.storage;
 
 
 import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.text.Html;

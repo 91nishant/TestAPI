@@ -12,13 +12,15 @@ import static com.niansoft.utils.CustomLogger.printVerbose;
 
 public class CrashExample extends AppCompatActivity implements View.OnClickListener{
     private static final String TAG = "CrashExample";
-    Button mTriggerCrash;
+    Button mTrJavaCrash, mTrNativeCrash;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         printVerbose(TAG, "onCreate");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crash_example);
+        init();
+        initUiListeners();
     }
 
     @Override
@@ -31,26 +33,33 @@ public class CrashExample extends AppCompatActivity implements View.OnClickListe
     protected void onResume() {
         printVerbose(TAG, "onResume");
         super.onResume();
-        init();
-        initUiListeners();
     }
 
     private void init() {
-        mTriggerCrash = findViewById(R.id.trigger_crash);
+        mTrJavaCrash = findViewById(R.id.trigger_java_crash);
+        mTrNativeCrash = findViewById(R.id.trigger_native_crash);
     }
 
     private void initUiListeners() {
-        mTriggerCrash.setOnClickListener(this);
+        mTrJavaCrash.setOnClickListener(this);
+        mTrNativeCrash.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.trigger_crash:
-                printVerbose(TAG, "Button Clicked :", getResources().getString(R.string.trigger_crash));
+            case R.id.trigger_java_crash:
+                printVerbose(TAG, "Button Clicked :", getResources().getString(R.string.trigger_java_crash));
                 printVerbose(TAG, "Throwing NullPointerException");
                 Toast.makeText(this, "NullpointerException thrown", Toast.LENGTH_LONG).show();
                 throw new NullPointerException();
+            case R.id.trigger_native_crash:
+                printVerbose(TAG, "Button Clicked :", getResources().getString(R.string.trigger_native_crash));
+                printVerbose(TAG, "Crashing native");
+                Toast.makeText(this, "Crashing native", Toast.LENGTH_LONG).show();
+
+                // Pass code flow towards native -> tombstones will be generated once successfully crashed
+
         }
     }
 

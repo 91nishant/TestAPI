@@ -1,0 +1,72 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI",
+      "sdkFolder": "F:\\Nishant\\Code\\Android\\AndroidSdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app",
+      "makeFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\.cxx",
+      "cxxFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx",
+      "ndkFolder": "F:\\Nishant\\Code\\Android\\AndroidSdk\\ndk\\21.2.6472646",
+      "ndkVersion": "21.2.6472646",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [
+      ""
+    ],
+    "variantName": "debug",
+    "soFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\build\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\build\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86",
+  "abiPlatformVersion": 23,
+  "cxxBuildFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cmake\\debug\\x86",
+  "jsonFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cmake\\debug\\x86\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cxx\\debug\\x86",
+  "objFolder": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\build\\intermediates\\cmake\\debug\\obj\\x86",
+  "buildCommandFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cmake\\debug\\x86\\build_command.txt",
+  "buildOutputFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cmake\\debug\\x86\\build_output.txt",
+  "modelOutputFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cmake\\debug\\x86\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cxx\\debug\\x86\\CMakeLists.txt",
+    "toolchainWrapperFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cxx\\debug\\x86\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cxx\\debug\\x86\\build_generation_state.json",
+    "cacheKeyFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cxx\\debug\\x86\\compiler_cache_key.json",
+    "compilerCacheUseFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cxx\\debug\\x86\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cxx\\debug\\x86\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cxx\\debug\\x86\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cmake\\debug\\x86\\json_generation_record.json",
+  "compileCommandsJsonFile": "C:\\Users\\awsnu\\Dropbox\\Code\\Workspace\\AndroidStudio\\TestAPI\\app\\.cxx\\cmake\\debug\\x86\\compile_commands.json"
+}

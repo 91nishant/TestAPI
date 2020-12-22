@@ -22,7 +22,7 @@ public class StringUtility {
 	 * @param aString
 	 * @return
 	 */
-	private static final String convertToLowerCase(String aString) {
+	private static String convertToLowerCase(String aString) {
 		return aString.toLowerCase();
 	}
 
@@ -32,7 +32,7 @@ public class StringUtility {
 	 * @param aString
 	 * @return
 	 */
-	private static final String convertToUpperCase(String aString) {
+	private static String convertToUpperCase(String aString) {
 		return aString.toUpperCase();
 	}
 
@@ -60,9 +60,9 @@ public class StringUtility {
 	 */
 	public static boolean isPalindrome(String aString) {
 		if (mCaseSensitive) {
-			return aString.equals(reverseString(aString)) ? true : false;
+			return aString.equals(reverseString(aString));
 		} else {
-			return aString.equalsIgnoreCase(reverseString(aString)) ? true : false;
+			return aString.equalsIgnoreCase(reverseString(aString));
 		}
 	}
 
@@ -78,15 +78,15 @@ public class StringUtility {
 			firstString = convertToLowerCase(firstString);
 			secondString = convertToLowerCase(secondString);
 		}
-		String letters = "";
+		StringBuilder letters = new StringBuilder();
 		if (firstString.length() == secondString.length()) {
 			for (int i = firstString.length() - 1; i >= 0; i--) {
 				ch = firstString.charAt(i);
-				if (letters.indexOf(ch) == -1) {
+				if (letters.toString().indexOf(ch) == -1) {
 					if (countCharacters(firstString, ch) != countCharacters(secondString, ch))
 						return false;
 					else
-						letters = letters + ch;
+						letters.append(ch);
 				}
 			}
 		} else {
@@ -104,7 +104,7 @@ public class StringUtility {
 	 */
 	public static int countCharacters(String aString, char ch) {
 		if (!mCaseSensitive) {
-			if (Integer.valueOf(ch) >= 97)
+			if ((int) ch >= 97)
 				aString = convertToUpperCase(aString);
 			else
 				aString = convertToLowerCase(aString);
@@ -151,8 +151,9 @@ public class StringUtility {
 		return count;
 	}
 
-	public static String[] sortStringArray(String aStringArray[]) {
-		String sortedArray[] = aStringArray.clone(), temp;
+	public static String[] sortStringArray(String[] aStringArray) {
+		String[] sortedArray = aStringArray.clone();
+		String temp;
 		int lengthArray = sortedArray.length;
 		/*if (!mCaseSensitive) {
 			for (int i = 0; i < lengthArray; i++)
@@ -161,7 +162,7 @@ public class StringUtility {
 		for (int i = 0, j = 0, count = 0; i < (lengthArray - 1); i++) {
 			if (j < sortedArray[i].length() && j < sortedArray[i+1].length()) {
 				System.out.print("\nPoint 1     ");
-				if (Integer.valueOf(sortedArray[i].charAt(j)) > Integer.valueOf(sortedArray[i + 1].charAt(j))) {
+				if ((int) sortedArray[i].charAt(j) > (int) sortedArray[i + 1].charAt(j)) {
 					System.out.print("Point 2     ");
 					if (j==0) {
 						System.out.print("Point 3     ");
@@ -201,10 +202,10 @@ public class StringUtility {
 	 * @param aSubString
 	 * @return matching substring-array
 	 */
-	public static String[] searchStringInArray(String aStringArray[], String aSubString) {
+	public static String[] searchStringInArray(String[] aStringArray, String aSubString) {
 		int lengthArray = aStringArray.length;
 		String[] copyArray = aStringArray.clone();
-		String matchedArray[] = new String[lengthArray];
+		String[] matchedArray = new String[lengthArray];
 		if (!mCaseSensitive) {
 			for (int i = 0; i < lengthArray; i++)
 				copyArray[i] = convertToLowerCase(copyArray[i]);
